@@ -1,3 +1,45 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+    background-image: "//placekitten.com/g/1000/1000";
+    background-color: #cccccc;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 h1 {
-    color: purple;
+    color: #330033;
+    text-align: center;
+    margin: 0;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+    text-align: center;
+}
+
+.main-nav {
+    color: #330033;
+}
+
+/* ================================= 
+  Class Selectors
+==================================== */
+
+.quote {
+    font-family: 'Permanent Marker';
 }
