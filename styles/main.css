@@ -1,15 +1,63 @@
 /* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+
+}
+
+.main-nav {
+    color: #330033;
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+/* ================================= 
+  class/id selectors
+==================================== */
+
+.quote {
+    font-family: 'Permanent Marker';
+    font-size: 2em;
+    color:#330033;
+}
+
+#name {
+    color: #330033;
+    padding: 0;
+}
+
+#welcome {
+    color: #fff;
+    background-color: #330033;
+    padding: 3em;
+}
+
+#schedule{
+    display: inline-block;
+    justify-content: left;
+}
+
+#classes {
+    padding: 1em 0;
+}
+
+/* ================================= 
   Base Element Styles
 ==================================== */
 
 body {
-    background-image: "//placekitten.com/g/1000/1000";
-    background-color: #cccccc;
+    color: #330033;
+    background-color: #fff;
+    text-align: center;
     font-family: 'Ubuntu', sans-serif;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 a {
@@ -17,29 +65,19 @@ a {
 }
 
 h1 {
-    color: #330033;
-    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+h2 {
     margin: 0;
 }
 
-/* ================================= 
-  Base Layout Styles
-==================================== */
-
-/* ---- Navigation ---- */
-
-.main-header {
-    text-align: center;
+li {
+    padding: .5em;
 }
 
-.main-nav {
-    color: #330033;
-}
-
-/* ================================= 
-  Class Selectors
-==================================== */
-
-.quote {
-    font-family: 'Permanent Marker';
+p{
+    font-size: 1.25em;
 }
