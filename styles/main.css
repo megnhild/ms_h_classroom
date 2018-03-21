@@ -9,7 +9,7 @@
 }
 
 .main-nav {
-    color: #330033;
+    color: #515A5A;
     font-weight: bolder;
     font-size: 1.25em;
 }
@@ -26,7 +26,9 @@
 
 a {
     flex-grow: 1;
-    border: 1px solid black;
+    border: 1px solid #808080;
+    padding: 1em 0;
+    color: #515A5A;
 }
 
 /* ================================= 
@@ -65,7 +67,7 @@ a {
 
 body {
     color: #330033;
-    background-color: #fff;
+    background-color: #f2f2f2;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
 }
