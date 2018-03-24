@@ -1,3 +1,19 @@
+/* --- sticky header --- */
+window.onscroll = function() {scrollFunction()};
+let header = document.getElementById("header");
+let sticky = header.offsetTop;
+
+// Adds the sticky class to the header when you scroll. Removes sticky class when you leave the scroll.
+function scrollFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+/* --- /sticky header --- */
+
+/* --- video slideshow --- */
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -21,3 +37,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
 }
+/* --- video slideshow --- */
