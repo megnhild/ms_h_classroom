@@ -16,6 +16,7 @@ ul {
 a {
     text-decoration: none;
     color: #fff;
+    margin: 0 .75em;
 }
 
 h1 {
@@ -24,7 +25,8 @@ h1 {
 }
 
 li {
-    padding: 0 .5em;
+    padding: 0 .25em;
+    color: #fff;
 }
 
 p {
@@ -35,8 +37,32 @@ p {
   class/id selectors
 ==================================== */
 
-#name {
-    font-size: 1.5em;
+/* .header-image {
+    position: relative;
+    text-align: center;
+    color: white;
+} */
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border: 0;
+    z-index: -1;
+}
+
+.welcome {
+    font-size: 4vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom-style: solid;
+    border-bottom-width: 12px;
+    border-bottom-color: #271230;
+    z-index: -1;
 }
 
 .about-me {
@@ -59,8 +85,22 @@ p {
 }
 
 /* ================================= 
-  Sticky Nav Bar
+  Nav Bar
 ==================================== */
+
+.main-header  a:hover {
+    color: #271230;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#name {
+    font-size: 1.5em;
+}
 
 .sticky {
     position: fixed;
@@ -131,17 +171,6 @@ p {
     color: #fff;
 }
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
@@ -164,11 +193,11 @@ p {
   Media Queries
 ==================================== */
 
-@media only screen and (min-width: 460px) {
+@media (min-width: 460px) {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .main-header, .main-nav {
         display: flex;
         flex-direction: row;
