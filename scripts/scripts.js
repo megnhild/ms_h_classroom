@@ -1,11 +1,11 @@
 /* --- sticky header --- */
 window.onscroll = function() {scrollFunction()};
 let header = document.getElementById("header");
-let sticky = header.offsetTop;
+let sticky = 25;
 
 // Adds the sticky class to the header when you scroll. Removes sticky class when you leave the scroll.
 function scrollFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset || window.scrollY >= sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
