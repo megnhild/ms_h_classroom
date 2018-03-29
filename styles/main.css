@@ -130,6 +130,7 @@ footer {
 
 #copyright {
     font-style: italic;
+    margin: 0 0 10px 0;
 }
 
 /* ================================= 
@@ -137,7 +138,7 @@ footer {
 ==================================== */
 
 .main-header  a:hover {
-    color: #fff;
+    color: #271230;
 }
 
 .main-header {
@@ -168,6 +169,10 @@ footer {
     color: #271230;
 }
 
+.sticky a:hover {
+    color: #fff;
+}
+
 /* ================================= 
   Slideshow Styles
 ==================================== */
@@ -177,7 +182,7 @@ footer {
 /* Slideshow container */
 .slideshow {
     max-width: 800px;
-    position: relative;
+    /* position: relative; */
     margin: 0 auto;
     z-index: -1;
 }
@@ -198,16 +203,19 @@ footer {
     overflow: hidden;
     padding-top: 56.25%;
     margin: 0 10%;
-    z-index: -1;
 }
 
 /* Next & previous buttons */
+.prev-next-buttons {
+    margin-top: 1em;
+}
+
 .prev, .next {
     cursor: pointer;
-    position: absolute;
-    top: 45%;
+    /* position: absolute; */
+    /* top: 45%; */
     width: auto;
-    margin-top: -22px;
+    /* margin-top: -22px; */
     padding: 16px;
     color: #808080;
     font-weight: bold;
@@ -225,7 +233,7 @@ footer {
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -304,7 +312,6 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 16px;
-        color: #271230;
       }
     
     .main-nav {
