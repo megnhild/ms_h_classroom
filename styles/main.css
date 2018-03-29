@@ -29,7 +29,7 @@ h2{
     color: #271230;
     font-family: 'Montserrat', sans-serif;
     margin-top: 6em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     text-decoration: underline #271230 solid;
 }
 
@@ -90,7 +90,7 @@ footer {
 }
 
 .large-welcome {
-    font-size: 4vw;
+    font-size: 1.75em;
     border-bottom-style: solid;
     border-bottom-width: .15em;
     border-bottom-color: #271230;
@@ -101,16 +101,31 @@ footer {
     color: #271230; 
     padding: 0 3em;
     z-index: -1;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
 }
 
 .contact-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0 auto 5em;
+    margin: 0 auto 4em;
+    padding: 0 2em;
+}
+
+.map {
+    margin: 0 auto;
+    max-width: 700px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
 }
 
 #copyright {
@@ -245,24 +260,42 @@ footer {
     flex: 2;
  }
 
-.footer-flex-container {
+.footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.footer-flex-items {
-    margin: .25em 0;
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.address {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-items {
+    margin: .25em 0;
 }
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 460px) {
+@media (min-width: 453px) {
+    .large-welcome {
+        font-size: 2.5em;
+    }
 
+    .footer-items {
+        margin: .25em .5em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -280,6 +313,10 @@ footer {
         margin: 0;
         padding: 0;
     }
+
+    .large-welcome {
+        font-size: 3em;
+    }
     
     .about-me {
         display: flex;
@@ -294,5 +331,31 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         margin-left: 3em;
+    }
+
+    .contact-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
+        max-width: 700px;
+        margin: 0 auto 2em;
+    }
+
+    .col {
+        flex: 1;
+        padding: 0 .5em;
+    }
+
+    .email {
+        font-size: 1.1em;
+    }
+
+    .phone {
+        margin-right: 2em;
+    }
+
+    .footer-items {
+        margin: .25em 1em;
     }
 }
