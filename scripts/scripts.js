@@ -14,7 +14,7 @@ function scrollFunction() {
 /* --- /sticky header --- */
 
 /* --- video slideshow --- */
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // next/previous controls
@@ -23,10 +23,6 @@ function plusSlides(n) {
 }
 
 // video controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("videos");
